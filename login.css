@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("ing/main1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to right, #db1a60, #ff9966); */
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+
+    background: rgba(0, 0, 0, 0.607);
+    backdrop-filter: blur(3px);
+    border-radius: 2rem;
+}
+
+form h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+label{
+    font-size: 18px;
+}
+
+form div div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    line-height: 30px;
+
+    background: transparent;
+    border: none;outline: none;
+    border-bottom: 1px solid white;
+}
+
+form i{
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+input{
+    all:unset;
+    
+    transition: .1s ease-in-out;
+    font-size: 17px;
+}
+
+input, button{
+    height: 50px;
+    width: 300px;
+
+    margin-top: .2rem;
+}
+
+button{
+    background: #ff884d;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+
+    border: none;outline: none;
+    border-radius: 5rem;
+    
+
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 550px) {
+    input, button{
+        width: 100%;
+    }
+}
